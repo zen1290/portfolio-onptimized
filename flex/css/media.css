@@ -1,0 +1,27 @@
+@media(max-width: 1300px) 
+{
+        .header
+        {
+            display: none;
+        }
+        .bars
+        {
+                display:block;     
+        }
+    .destination p,.recent .col
+    {
+        width: 100%;
+        
+    }
+    .newsletter
+    {
+        height: initial;
+    }
+    .newsletter button ,.newsletter input
+    
+    {
+        width: 100%;
+        /* padding: initial; */
+        margin: 0;
+    }
+}

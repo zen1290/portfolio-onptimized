@@ -1,0 +1,498 @@
+body
+{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.bars
+ {
+    padding: 20px;
+    background-color: gray;
+    display: none;
+    border: 2px solid black;
+
+ }
+ .fa-bars
+ {
+    font-size: 30px;
+    color: white;
+    background-color: black;
+    padding: 20px;
+ }
+.social i,.phone span
+{
+    padding: 5px;
+}
+.phone span
+{
+    border-right: 1px solid gray;
+}
+.logo,.search
+{
+    padding:50px 40px 10px 40px;
+}
+.row,.rowf
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.list,.social,.phone
+{
+    padding: 40px;
+}
+.list li
+{
+    padding: 10px;
+}
+.header1
+{
+    position: sticky;
+    top: 0;
+    bottom: 0;
+    z-index: 5;
+    display: none;
+}
+.header1 .logo, .header1 .search
+{
+    padding:10px;
+}
+
+.navbar
+{
+    background-color: white;
+   
+    z-index: 3;
+  
+}
+.list ul li
+{
+    display: inline;
+}
+.list ul li a
+{
+    text-decoration: none;
+    color: black;
+    transition: .71s;
+}
+.search
+{
+    background-color: #dc3545;
+    color: white;
+}
+.dropdown
+{
+    position: relative;
+    
+}
+.list li a:hover
+{
+    color: aqua;
+}
+.dropdown:hover .drop
+{   
+    
+   opacity: 1;
+   top: 100%;
+
+}
+.drop
+{
+    border: 3px solid black;
+    width: 200px;
+
+    background-color: white;
+    position: absolute;
+    top: 250%;
+    left: 0;
+    opacity: 0;
+    transition: .71s;
+    /* display: none; */
+}
+.drop li
+{
+    line-height: 50px;
+}
+
+
+.slide
+{
+    height: 700px;
+    position: relative;
+    text-align: center;
+
+}
+.slide .info
+{
+    position: absolute;
+    left: 35%;
+    top: 35%;
+    color: white;
+}
+.slide .info p
+{
+    font-size: 20px;
+    
+}
+.slide .info p,.slide .info h1
+{
+    text-shadow: 1px 1px 1px black;
+    margin: 0;
+
+
+}
+.slide .change
+{
+    margin-top: 20px;
+}
+
+.change,.change1
+{
+    background-color: rgb(1, 168, 168);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: .71s;
+    padding: 30px 60px;
+    font-size: 15px;
+
+}
+.change1
+{
+    padding: 20px 40px;
+
+}
+.change:hover
+{
+    background-color: #dc3545;
+    color: white;
+}
+.change1
+{
+    background-color: #dc3545;
+    color: white;
+
+}
+.change1:hover
+{
+    background-color: rgb(1, 168, 168);
+    color: white;
+}
+.slide h1
+{
+    font-size: 5vw;
+    font-family: "Playwrite IN";
+
+}
+.slide img
+{
+    width: 100%;
+    height: 100%;
+    
+}
+.trip
+{
+    background-color: #040E27;
+    padding: 20px;
+    text-align: center;
+    color: white;
+    height: 100px;
+    padding-top: 60px;
+}
+.trip span
+{
+    font-size: 30px;
+}
+.trip input,.trip select
+{
+    padding: 10px;
+    width: 200px;
+    border: none;
+    border-radius: 5px;
+    background-color: #040E27;
+    color: white;
+    border: 1px solid rgba(255, 255, 255, 0.663);
+}
+.destination
+{
+    margin-top: 150px;
+    text-align: center;
+}
+.destination p
+{
+    font-size: 20px;
+    width: 450px;
+    margin: auto;
+    
+}
+.cards
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    row-gap: 50px;
+    padding: 20px;
+    margin-top: 50px;
+}
+.card
+{
+    position: relative;
+    transition: .71s;  
+}
+.card:hover 
+{
+    transform: translate(0px,-40px);
+}
+.card:hover .info button
+{
+    background-color: #dc3545;
+    color: white;
+}
+.card img
+{
+  
+    filter: brightness(70%);
+}
+.info
+{
+    position: absolute;
+    top: 80%;
+    left: 40px;
+    color: white;
+}
+.card .info span
+{
+    font-size: 30px;
+}
+.card .info button
+{
+    border: none;
+    border-radius: 50px;
+    padding: 10px 20px;
+    margin-left: 20px;
+    transition: .71s;
+}
+.newsletter
+{
+    height: 200px;
+    background:linear-gradient(rgba(0, 0, 0, 0.5),rgba(0, 0, 0, 0.5)),
+     url("/flex/images/newsletter.png");
+    background-size: 100% 100%;
+}
+.infor
+{
+    justify-content: center;
+   padding-top: 80px;
+   color: white;
+}
+.infor button
+{
+    padding: 20px 40px;
+    margin-left: 30px;
+}
+.infor input
+{
+    width: 300px;
+    line-height: 50px;
+    border: none;
+    border-radius: 10px;
+}
+.popular .info
+{
+    top: 40px;
+    left: 0;
+}
+.popular .card img
+{
+    filter: brightness(100%);
+
+    border-radius: 5px;
+}
+.popular .card
+{
+    height: 310px;
+    width: 400px;
+    text-align: initial;
+   
+}
+.popular .card:hover .dis h2
+{
+    color: #dc3545;
+} 
+.popular .card:hover 
+{
+    transform: translate(0px,0px);
+    background-color: white;
+   
+}
+.popular .card:hover .info button
+{
+    background-color: #dc3545;
+    color: white;
+}
+.vedio
+{
+    margin-top: 50px;
+    height: 700px;
+    position: relative;
+    margin-bottom: 100px;
+}
+.vedio h2
+{
+    position: absolute;
+    left: 35%;
+    top: 25%;
+    font-size: 3vw;
+    font-family: "Playwrite IN";
+    color: white;
+
+}
+.vedio img
+{
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+}
+.play,.over
+{
+    position: absolute;
+    left: 47%;
+    top: 50%;
+    height: 100px;
+    width: 100px;
+    background-color: rgb(1, 168, 168);
+    border-radius: 50%;
+    z-index: 3;
+
+}
+.fa-play
+{
+    font-size: 30px;
+    color: white;
+    margin-top: 40px;
+    margin-left: 40px;
+}
+.over
+{
+  
+   background-color: rgb(1, 168, 168);
+   
+  
+    z-index: 2;
+    animation: identifier .51s infinite backwards;
+}
+.guide
+{
+    margin-top: 50px;
+    text-align: center;
+}
+.fa-train-subway,.fa-hotel,.fa-earth-asia
+{
+    font-size: 70px;
+    color: #dc3545;
+}
+.space
+{
+    margin-bottom: 100px;
+}
+.employee
+{
+    background-color: rgba(220, 220, 220, 0.648);
+    height: 400px;
+    padding-top: 150px;
+}
+.fa-quote-left
+{
+    font-size: 20px;
+    background-color: rgb(94, 194, 161);
+    padding: 10px;
+    border-radius: 50%;
+    color: white;
+   
+}
+.recent .row
+{
+    justify-content: center;
+ 
+}
+
+.recent .col
+{
+    text-align: left;
+    padding: 20px;
+    transition: .71s;
+    width: 400px;
+    
+  
+    
+}
+.recent h2
+{
+    font-size: 40px;
+}
+.recent p
+{
+    font-size: 25px;
+    width: 400px;
+}
+.recent .col:hover
+{
+    color: #dc3545;
+}
+.gre
+{
+    color: grey;
+    font-size: 15px;
+}
+.recent img
+{
+    border-radius: 5px;
+  
+}
+.footer
+{
+    background-color:#040E27;
+    color: white;
+    padding: 20px;
+}
+.footer ul
+{
+    list-style: none;
+}
+.footer li a
+{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.546);
+}
+.footer .col
+{
+    text-align: center;
+}
+.footer .rowf
+{
+    gap: 20px;
+    width: 300px;
+}
+.footer img
+{
+    border-radius: 5px;
+}
+.footer .col p
+{
+    width: 200px;
+}
+
+@keyframes identifier {
+    from {
+        transform: scale(1.0);
+        opacity: 1;
+    }
+    to {
+        transform: scale(1.5);
+        opacity: 0;
+       
+    }
+    
+}

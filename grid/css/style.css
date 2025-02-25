@@ -1,0 +1,79 @@
+body
+{
+    padding: 0px;
+    margin: 0;
+    box-sizing: border-box;
+}
+.box
+{
+    padding: 20px;
+}
+.header
+{
+    
+    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+     url('/grid/images/bg_1.jpg');
+    background-size: cover;
+    background-repeat: no-repeat;
+    color: rgba(255, 255, 255, 0.952);
+}
+.header h2
+{
+    font-size: 35px;
+}
+.header h2,.header p
+{
+    padding: 0;
+    margin: 0;
+}
+.row
+{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+
+}
+.header li
+{
+    display: inline;
+}
+.header li a
+{
+    color: rgba(255, 255, 255, 0.568);
+    text-decoration: none;
+    padding: 20px;
+}
+.banner
+{
+    text-align: center;
+    margin-top: 200px;
+}
+.banner h1
+{
+    font-size: 70px;
+    margin: 0;
+    
+}
+.banner p
+{
+    font-size: 20px;   
+}
+.banner button
+{
+    padding: 20px 50px;
+    background-color: #c5a880 ;
+    color: white;
+    border: none;
+    margin-top: 20px;
+    margin-left: 10px;
+    cursor: pointer;
+}
+.banner .white
+{
+    background-color: transparent;
+    border: 1px solid white;
+}
+.fa-arrow-right
+{
+    font-size: 10px;
+}
