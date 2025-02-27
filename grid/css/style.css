@@ -11,11 +11,12 @@ body
 .header
 {
     
-    background:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),
+    background:linear-gradient(rgba(0,0,0,0.5),rgba(0,0,0,0.5)),
      url('/grid/images/bg_1.jpg');
     background-size: cover;
     background-repeat: no-repeat;
     color: rgba(255, 255, 255, 0.952);
+    position: relative;
 }
 .header h2
 {
@@ -28,10 +29,8 @@ body
 }
 .row
 {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-
+    display: grid;
+    grid-template-columns: repeat(auto-fit,minmax(200px,1fr));
 }
 .header li
 {
@@ -41,12 +40,19 @@ body
 {
     color: rgba(255, 255, 255, 0.568);
     text-decoration: none;
-    padding: 20px;
+    padding: 10px;
+    transition: .71s;
+
+}
+.header li a:hover
+{
+    color: white;
 }
 .banner
 {
     text-align: center;
     margin-top: 200px;
+    margin-bottom: 200px;
 }
 .banner h1
 {
@@ -72,8 +78,45 @@ body
 {
     background-color: transparent;
     border: 1px solid white;
+    
+}
+.white
+{
+    transition: .71s;
+}
+.white:hover
+{
+    background-color: white;
+    color: black;   
 }
 .fa-arrow-right
 {
     font-size: 10px;
+}
+.avail
+{
+    text-align: left;
+    position: absolute;
+    top: 90%;
+    left: 5%;
+   
+}
+.avail .row
+{
+    display: grid;
+ 
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+}
+
+.avail .col,.avail .col1
+
+{
+    background-color: #212529;
+    padding: 50px;
+}
+.avail .col1
+
+{
+    background-color: #c5a880;
+    color: white;
 }
